@@ -1,0 +1,44 @@
+{
+  "app": {
+    "title": "PPSEDUCRM",
+    "subtitle": "Образовательная CRM"
+  },
+  "auth": {
+    "login": "Вход",
+    "email": "Email",
+    "password": "Пароль",
+    "logout": "Выход",
+    "submit": "Войти"
+  },
+  "nav": {
+    "dashboard": "Панель",
+    "applicants": "Абитуриенты",
+    "schedule": "Расписание",
+    "classrooms": "Аудитории",
+    "hours": "Часы",
+    "profile": "Профиль",
+    "notifications": "Уведомления",
+    "integrations": "Интеграции",
+    "references": "Справочники"
+  },
+  "status": {
+    "new": "Новый",
+    "contacted": "Связались",
+    "contract_draft": "Черновик договора",
+    "contract_signed": "Договор подписан",
+    "enrolled": "Зачислен",
+    "rejected": "Отказ"
+  },
+  "slotType": {
+    "lecture": "Лекция",
+    "lab": "Лабораторная",
+    "consultation": "Консультация"
+  },
+  "common": {
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "noData": "Нет данных"
+  }
+}

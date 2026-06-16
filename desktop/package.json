@@ -1,0 +1,13 @@
+{
+  "name": "ppseducrm-desktop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "PPSEDUCRM Desktop (Tauri 2)",
+  "scripts": {
+    "dev": "tauri dev",
+    "build": "tauri build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  }
+}
