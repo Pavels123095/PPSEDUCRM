@@ -1,7 +1,9 @@
 {
-  "name": "frontend",
+  "name": "mr-prizrak-crm-frontend",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": "Mr Prizrak",
+  "description": "Mr Prizrak CRM — React frontend (PPSEDUCRM)",
   "type": "module",
   "scripts": {
     "dev": "vite",

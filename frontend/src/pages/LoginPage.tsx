@@ -39,7 +39,8 @@ export function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-slate-100 p-4">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
         <h1 className="text-2xl font-bold text-center mb-1">{ru.app.title}</h1>
-        <p className="text-center text-slate-500 text-sm mb-6">{ru.app.subtitle}</p>
+        <p className="text-center text-slate-600 text-sm mb-1">{ru.app.product}</p>
+        <p className="text-center text-slate-500 text-xs mb-6">{ru.app.subtitle}</p>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-sm font-medium mb-1">{ru.auth.email}</label>
@@ -66,6 +67,9 @@ export function LoginPage() {
             {loading ? ru.common.loading : ru.auth.submit}
           </Button>
         </form>
+        <p className="text-center text-[10px] text-slate-400 mt-6 leading-relaxed">
+          {ru.app.copyright}<br />{ru.app.patent}
+        </p>
       </div>
     </div>
   )

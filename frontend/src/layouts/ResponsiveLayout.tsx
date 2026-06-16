@@ -47,7 +47,8 @@ export function ResponsiveLayout({ children }: { children: React.ReactNode }) {
       <aside className="hidden md:flex md:w-64 md:flex-col bg-slate-800 text-white">
         <div className="p-4 border-b border-slate-700">
           <h1 className="font-bold text-lg">{ru.app.title}</h1>
-          <p className="text-xs text-slate-400">{user?.name}</p>
+          <p className="text-xs text-slate-400">{ru.app.product}</p>
+          <p className="text-xs text-slate-500">{user?.name}</p>
         </div>
         <nav className="flex-1 p-4 space-y-1">
           {navItems.map((item) => (
@@ -70,11 +71,17 @@ export function ResponsiveLayout({ children }: { children: React.ReactNode }) {
         >
           {ru.auth.logout}
         </button>
+        <p className="mx-4 mb-4 text-[10px] text-slate-500 leading-tight">
+          {ru.app.copyright}<br />{ru.app.patent}
+        </p>
       </aside>
 
       <main className="flex-1 flex flex-col pb-16 md:pb-0">
         <header className="md:hidden bg-slate-800 text-white px-4 py-3 flex justify-between items-center">
-          <span className="font-bold">{ru.app.title}</span>
+          <div>
+            <span className="font-bold">{ru.app.title}</span>
+            <span className="text-xs text-slate-400 block">{ru.app.product}</span>
+          </div>
           <button onClick={() => logout()} className="text-sm text-slate-300">
             {ru.auth.logout}
           </button>

@@ -1,7 +1,13 @@
 {
     "name": "ppseducrm/backend",
     "type": "project",
-    "description": "PPSEDUCRM — образовательная CRM API (Laravel 11)",
+    "description": "Mr Prizrak CRM (PPSEDUCRM) — образовательная CRM API",
+    "authors": [
+        {
+            "name": "Mr Prizrak",
+            "role": "Developer / Patent holder"
+        }
+    ],
     "keywords": ["laravel", "crm", "education"],
     "license": "proprietary",
     "require": {

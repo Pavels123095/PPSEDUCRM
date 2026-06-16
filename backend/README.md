@@ -1,6 +1,9 @@
-# PPSEDUCRM Backend (Laravel 11 API)
+# Mr Prizrak CRM — Backend API (PPSEDUCRM)
 
-Образовательная CRM — API-only backend на Laravel 11.
+**Автор и правообладатель:** Mr Prizrak  
+**Патент / ИС:** © 2026 Mr Prizrak — см. [../LEGAL.md](../LEGAL.md)
+
+Образовательная CRM — API-only backend на Laravel 12.
 
 ## Требования
 
@@ -19,28 +22,17 @@ php artisan migrate --seed
 php artisan serve
 ```
 
-API доступен по адресу `http://localhost:8000/api`.
+## Демо-аккаунты
 
-## Демо-пользователи (пароль: `password`)
+| Роль | Email | Пароль |
+|------|-------|--------|
+| admin | admin@ppseducrm.local | password |
+| manager | manager@ppseducrm.local | password |
+| teacher | teacher1@ppseducrm.local | password |
+| student | student1@ppseducrm.local | password |
 
-| Роль | Email |
-|------|-------|
-| admin | admin@ppseducrm.local |
-| manager | manager@ppseducrm.local |
-| teacher | teacher1@ppseducrm.local |
-| student | student1@ppseducrm.local |
+## API
 
-## Основные эндпоинты
+Базовый URL: `http://localhost:8000/api`
 
-- `POST /api/auth/login` — вход (Sanctum token)
-- `GET /api/auth/me` — текущий пользователь
-- `GET /api/applicants` — абитуриенты (manager/admin)
-- `GET /api/schedule-slots` — расписание (teacher/manager/admin)
-- `GET /api/student/schedule` — расписание студента
-- `POST /api/integrations/1c/webhook` — webhook 1С (admin)
-
-## Локализация
-
-- Лocale: `ru`
-- Timezone: `Europe/Moscow`
-- Валидация СНИЛС: `App\Rules\SnilsRule`
+Авторизация: Bearer token (Sanctum).

@@ -1,8 +1,9 @@
 {
-  "name": "ppseducrm",
+  "name": "mr-prizrak-crm",
   "private": true,
   "version": "1.0.0",
-  "description": "PPSEDUCRM monorepo",
+  "author": "Mr Prizrak",
+  "description": "Mr Prizrak CRM (PPSEDUCRM) — образовательная CRM",
   "scripts": {
     "dev:backend": "cd backend && php artisan serve",
     "dev:frontend": "cd frontend && npm run dev",

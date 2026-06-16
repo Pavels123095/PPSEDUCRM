@@ -10,7 +10,8 @@ param(
 $ErrorActionPreference = "Stop"
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
 
-Write-Host "=== PPSEDUCRM Setup ===" -ForegroundColor Cyan
+Write-Host "=== Mr Prizrak CRM (PPSEDUCRM) Setup ===" -ForegroundColor Cyan
+Write-Host "Author / Patent holder: Mr Prizrak" -ForegroundColor DarkGray
 
 # Frontend
 Write-Host "`n[1/3] Frontend..." -ForegroundColor Yellow

@@ -1,7 +1,9 @@
-# PPSEDUCRM — образовательная CRM
+# Mr Prizrak CRM (PPSEDUCRM) — образовательная CRM
+
+**Автор и правообладатель:** [Mr Prizrak](LEGAL.md)  
+**Патент / ИС:** © 2026 Mr Prizrak — см. [LEGAL.md](LEGAL.md)
 
 CRM для колледжей и техникумов: абитуриенты, договоры, педагоги, расписание, личные кабинеты студентов, интеграция с 1С.
-
 **Репозиторий:** https://github.com/Pavels123095/PPSEDUCRM.git
 
 ## Структура
@@ -96,6 +98,12 @@ npm run build  # сборка exe
 
 Obsidian vault: откройте папку `docs/` в Obsidian.
 
+## Отчёт и правовая информация
+
+- [REPORT.md](REPORT.md) — полный отчёт о восстановлении
+- [LEGAL.md](LEGAL.md) — патент и правообладатель Mr Prizrak
+
 ## Лицензия
 
-Proprietary — PPSEDUCRM
+Proprietary — **Mr Prizrak**. Все права защищены.  
+Подробности: [LEGAL.md](LEGAL.md)

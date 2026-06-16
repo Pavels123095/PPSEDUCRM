@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "PPSEDUCRM",
+  "productName": "Mr Prizrak CRM",
   "version": "1.0.0",
-  "identifier": "ru.ppseducrm.desktop",
+  "identifier": "ru.mrprizrak.ppseducrm",
   "build": {
     "beforeDevCommand": "npm run dev --prefix ../frontend",
     "devUrl": "http://localhost:5173",
@@ -13,7 +13,7 @@
     "withGlobalTauri": true,
     "windows": [
       {
-        "title": "PPSEDUCRM",
+        "title": "Mr Prizrak CRM",
         "width": 1280,
         "height": 800,
         "minWidth": 360,

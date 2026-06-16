@@ -1,8 +1,8 @@
 [package]
 name = "ppseducrm-desktop"
 version = "1.0.0"
-description = "PPSEDUCRM Desktop"
-authors = ["PPSEDUCRM"]
+description = "Mr Prizrak CRM Desktop (PPSEDUCRM)"
+authors = ["Mr Prizrak"]
 edition = "2021"
 
 [lib]

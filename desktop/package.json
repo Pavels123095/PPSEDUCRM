@@ -1,8 +1,9 @@
 {
-  "name": "ppseducrm-desktop",
+  "name": "mr-prizrak-crm-desktop",
   "private": true,
   "version": "1.0.0",
-  "description": "PPSEDUCRM Desktop (Tauri 2)",
+  "author": "Mr Prizrak",
+  "description": "Mr Prizrak CRM Desktop (Tauri 2)",
   "scripts": {
     "dev": "tauri dev",
     "build": "tauri build"

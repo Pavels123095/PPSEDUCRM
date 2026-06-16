@@ -1,7 +1,10 @@
 {
   "app": {
-    "title": "PPSEDUCRM",
-    "subtitle": "Образовательная CRM"
+    "title": "Mr Prizrak",
+    "product": "Mr Prizrak CRM",
+    "subtitle": "Образовательная CRM · PPSEDUCRM",
+    "copyright": "© 2026 Mr Prizrak",
+    "patent": "Патент / правообладатель: Mr Prizrak"
   },
   "auth": {
     "login": "Вход",
