@@ -1,0 +1,17 @@
+{
+  "name": "ppseducrm",
+  "private": true,
+  "version": "1.0.0",
+  "description": "PPSEDUCRM monorepo",
+  "scripts": {
+    "dev:backend": "cd backend && php artisan serve",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:desktop": "cd desktop && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "build:desktop": "cd desktop && npm run build",
+    "docker:up": "docker compose up -d --build backend frontend",
+    "docker:down": "docker compose down",
+    "setup:backend": "cd backend && composer install && cp .env.example .env && php artisan key:generate && php artisan migrate --seed",
+    "setup:frontend": "cd frontend && npm install && cp .env.example .env"
+  }
+}

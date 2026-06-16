@@ -1,6 +1,28 @@
 services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      APP_ENV: local
+      APP_DEBUG: "true"
+      APP_URL: http://localhost:8000
+      DB_CONNECTION: sqlite
+      DB_DATABASE: /var/www/html/database/database.sqlite
+      SANCTUM_STATEFUL_DOMAINS: localhost,localhost:5173,localhost:80,127.0.0.1
+    volumes:
+      - backend_storage:/var/www/html/storage
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
   mysql:
     image: mysql:8.0
+    profiles: ["mysql"]
     ports:
       - "3306:3306"
     environment:
@@ -11,14 +33,17 @@ services:
 
   redis:
     image: redis:7-alpine
+    profiles: ["redis"]
     ports:
       - "6379:6379"
 
   mailpit:
     image: axllent/mailpit
+    profiles: ["mail"]
     ports:
       - "8025:8025"
       - "1025:1025"
 
 volumes:
   mysql_data:
+  backend_storage:

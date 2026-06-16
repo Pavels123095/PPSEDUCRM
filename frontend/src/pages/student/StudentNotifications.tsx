@@ -8,8 +8,9 @@ export function StudentNotifications() {
   const { data, isLoading } = useQuery({
     queryKey: ['student-notifications'],
     queryFn: async () => {
-      const res = await api.get<Notification[]>('/student/notifications')
-      return Array.isArray(res.data) ? res.data : []
+      const res = await api.get<{ data: Notification[] } | Notification[]>('/student/notifications')
+      const payload = res.data
+      return Array.isArray(payload) ? payload : payload.data ?? []
     },
   })
 

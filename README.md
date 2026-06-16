@@ -24,7 +24,24 @@ PPSEDUCRM/
 
 ## Быстрый старт
 
-### Backend
+### Вариант A: Docker (рекомендуется, если нет PHP локально)
+
+```bash
+docker compose up -d --build backend frontend
+```
+
+- API: http://localhost:8000/api  
+- Web: http://localhost:8080  
+
+### Вариант B: Windows setup-скрипт
+
+```powershell
+.\scripts\setup.ps1
+```
+
+### Вариант C: Вручную
+
+#### Backend
 
 ```bash
 cd backend
@@ -50,10 +67,13 @@ Web: http://localhost:5173
 
 ### Desktop (Tauri)
 
+Собранный exe: `desktop\src-tauri\target\release\ppseducrm-desktop.exe`
+
 ```bash
 cd desktop
 npm install
-npm run dev
+npm run dev    # разработка
+npm run build  # сборка exe
 ```
 
 ## Демо-аккаунты

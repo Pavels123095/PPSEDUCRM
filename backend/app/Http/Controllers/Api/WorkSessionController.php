@@ -14,7 +14,9 @@ class WorkSessionController extends Controller
     {
         $query = WorkSession::query()->with(['teacher.user', 'scheduleSlot']);
 
-        if ($request->filled('teacher_id')) {
+        if ($request->user()->hasRole('teacher') && $request->user()->teacher) {
+            $query->where('teacher_id', $request->user()->teacher->id);
+        } elseif ($request->filled('teacher_id')) {
             $query->where('teacher_id', $request->integer('teacher_id'));
         }
 
@@ -31,7 +33,13 @@ class WorkSessionController extends Controller
 
     public function store(StoreWorkSessionRequest $request): JsonResponse
     {
-        $session = WorkSession::create($request->validated());
+        $data = $request->validated();
+
+        if (empty($data['teacher_id']) && $request->user()->teacher) {
+            $data['teacher_id'] = $request->user()->teacher->id;
+        }
+
+        $session = WorkSession::create($data);
 
         return response()->json($session->load(['teacher.user', 'scheduleSlot']), 201);
     }

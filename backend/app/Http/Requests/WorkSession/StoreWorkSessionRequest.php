@@ -16,7 +16,7 @@ class StoreWorkSessionRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'teacher_id' => ['required', 'exists:teachers,id'],
+            'teacher_id' => ['nullable', 'exists:teachers,id'],
             'schedule_slot_id' => ['nullable', 'uuid', 'exists:schedule_slots,id'],
             'activity_type' => ['required', Rule::in([
                 WorkSession::ACTIVITY_LECTURE,

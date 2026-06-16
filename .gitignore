@@ -9,6 +9,9 @@ backend/.env
 backend/storage/*.key
 backend/database/database.sqlite
 
+# Composer phar (local bootstrap)
+composer.phar
+
 # Frontend
 frontend/node_modules/
 frontend/dist/
